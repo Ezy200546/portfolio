@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ezy Ibrahima Cherif | Computer Science Student</title>
+  <meta name="description" content="Ezy Ibrahima Cherif — Computer Science & Engineering student at Islamic University of Technology (IUT), Bangladesh. Building academic projects, exploring cybersecurity, and growing one semester at a time." />
+  <meta name="author" content="Ezy Ibrahima Cherif" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ezy Ibrahima Cherif | Computer Science Student" />
+  <meta property="og:description" content="Portfolio of Ezy Ibrahima Cherif, a CSE student at Islamic University of Technology exploring software development and cybersecurity." />
+  <meta property="og:image" content="assets/images/profile-placeholder.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (labels/data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="nav-logo" aria-label="Ezy Ibrahima Cherif — home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <circle cx="9" cy="23" r="2.4" fill="currentColor"/>
+            <circle cx="23" cy="9" r="2.4" fill="currentColor"/>
+            <circle cx="23" cy="23" r="2.4" fill="var(--accent-2)"/>
+            <path d="M9 23 L23 9 M23 9 L23 23 M9 23 L23 23" stroke="currentColor" stroke-width="1.4" opacity="0.6" fill="none"/>
+          </svg>
+        </span>
+        <span class="logo-text">Ezy<span class="logo-dot">.</span>dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+        <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
+        <li><a href="#leadership" class="nav-link" data-nav>Leadership</a></li>
+        <li><a href="#interests" class="nav-link" data-nav>Interests</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <p class="eyebrow">CSE Student · IUT, Bangladesh</p>
+          <h1 class="hero-title">
+            Ezy Ibrahima Cherif
+          </h1>
+          <p class="hero-subtitle">Computer Science &amp; Engineering Student</p>
+          <p class="hero-desc">
+            I'm a 4th-semester CSE student who likes taking on academic challenges I'm
+            not yet sure I can solve, building small projects along the way, and
+            slowly exploring cybersecurity as a field I want to go deeper into.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="https://github.com/Ezy200546" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              GitHub
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.83-.02 3.22 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-ring" aria-hidden="true"></div>
+          <img id="profile-photo" src="assets/images/profile.jpg" alt="Portrait of Ezy Ibrahima Cherif" width="400" height="400" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow">01 — About</p>
+        <h2 class="section-title">A student still early in the story</h2>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm Ezy Ibrahima Cherif, a Computer Science and Engineering student at the
+              Islamic University of Technology in Bangladesh. I like studying, and I
+              genuinely enjoy putting myself in front of problems I'm not sure I can
+              solve yet — it's usually the best way I've found to actually measure what
+              I can do.
+            </p>
+            <p>
+              I moved to Bangladesh to study at IUT, and coming from Guinea, that meant
+              adjusting to an entirely English-medium academic system while I was still
+              learning to speak English properly. It was a genuinely difficult start.
+              Over time, and with a lot of patience, I found my footing — and I credit
+              that growth to the mercy of Allah, who has carried me through it.
+            </p>
+            <p>
+              Outside the classroom, I'm sociable and easy to get along with. Football
+              takes up a good chunk of my free time — I play it and I watch it. Right
+              now I'm also spending time exploring cybersecurity, which is a field I'm
+              curious about rather than one I'd claim any expertise in yet.
+            </p>
+          </div>
+
+          <div class="about-facts reveal">
+            <div class="fact-card">
+              <span class="fact-label">Studying</span>
+              <span class="fact-value">BSc in CSE, IUT — 4th Semester</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">From</span>
+              <span class="fact-value">Guinea → Bangladesh</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Exploring</span>
+              <span class="fact-value">Cybersecurity, systems, low-level programming</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Off-screen</span>
+              <span class="fact-value">Football — playing &amp; watching</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Grounded by</span>
+              <span class="fact-value">Faith, family, and a steady work ethic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-eyebrow">02 — Skills</p>
+        <h2 class="section-title">What I actually know right now</h2>
+        <p class="section-lead reveal">
+          No invented percentages here — just an honest list of what I currently use,
+          what I'm learning, and what I'm curious about. This list will grow every
+          semester.
+        </p>
+
+        <div class="skills-grid reveal">
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3>Programming</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">C</li>
+              <li class="tag">C++</li>
+              <li class="tag tag-learning">Java <span>learning</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">&#9096;</span>
+              <h3>Database</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">DBMS Fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">&#9881;</span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">&#9737;</span>
+              <h3>Areas of Interest</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag tag-interest">Cybersecurity</li>
+              <li class="tag tag-interest">Software Development</li>
+              <li class="tag tag-interest">Computer Science Theory</li>
+              <li class="tag tag-interest">Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow">03 — Projects</p>
+        <h2 class="section-title">Things I've built with my team</h2>
+        <p class="section-lead reveal">
+          All of the projects below were built as group work for coursework at IUT.
+          I'm one of several contributors on each of them, not the sole author.
+        </p>
+
+        <div class="filter-bar reveal" id="filterBar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="software" role="tab" aria-selected="false">Software</button>
+          <button class="filter-btn" data-filter="hardware" role="tab" aria-selected="false">Hardware / Digital Logic</button>
+          <button class="filter-btn" data-filter="academic" role="tab" aria-selected="false">Academic</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by script.js from the PROJECTS array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <p class="section-eyebrow">04 — Education</p>
+        <h2 class="section-title">Timeline</h2>
+
+        <ol class="timeline reveal">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 — 2028 (expected)</span>
+              <h3>BSc in Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">Islamic University of Technology (IUT), Bangladesh</p>
+              <p>Currently in my 4th semester. Coursework so far has covered programming
+                fundamentals, digital logic design, computer organization &amp; architecture,
+                database systems, and systems analysis &amp; design, among others.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h3>Baccalaureate — Sciences Mathématiques</h3>
+              <p class="timeline-org">Emmanuel de Kankan, Guinea</p>
+              <p>Completed my secondary education with a focus on mathematics and sciences,
+                before moving to Bangladesh to pursue my degree.</p>
+            </div>
+          </li>
+          <li class="timeline-item timeline-future">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">What's next</span>
+              <h3>More to come</h3>
+              <p class="timeline-org">Future courses, certifications &amp; achievements</p>
+              <p>This timeline is built to grow — future semesters, certifications, and
+                milestones will be added here as they happen.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section" id="journey">
+      <div class="container">
+        <p class="section-eyebrow">05 — My Journey</p>
+        <h2 class="section-title">From a difficult beginning to continuous growth</h2>
+
+        <div class="journey-wrap reveal">
+          <p class="journey-intro">
+            When I first arrived in Bangladesh to start my degree, I couldn't speak
+            English properly. Studying every course in an English-medium university
+            was, honestly, one of the hardest adjustments I've faced — lectures,
+            assignments, and even everyday conversations all required a language I
+            was still learning.
+          </p>
+
+          <div class="journey-milestones">
+            <div class="milestone">
+              <span class="milestone-tag">Arrival</span>
+              <p>Started at IUT with a real language barrier, on top of adjusting to a
+                new country and a new academic system.</p>
+            </div>
+            <div class="milestone">
+              <span class="milestone-tag">Adjustment</span>
+              <p>Kept showing up to classes, kept asking questions, and slowly built up
+                both my English and my confidence in a technical classroom.</p>
+            </div>
+            <div class="milestone">
+              <span class="milestone-tag">Today</span>
+              <p>I'm now one of the stronger students in my class — a change I still
+                notice and don't take for granted.</p>
+            </div>
+          </div>
+
+          <p class="journey-outro">
+            I don't see this as something I achieved purely on my own. I believe this
+            progress has been possible by the mercy of Allah, who has never let me
+            down through any of it. I'm sharing this here because I think it says more
+            about who I am than any list of skills could.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="section section-leadership" id="leadership">
+      <div class="container">
+        <p class="section-eyebrow">06 — Leadership &amp; Community</p>
+        <h2 class="section-title">International Student Community</h2>
+
+        <div class="leadership-card reveal">
+          <div class="leadership-role">
+            <span class="role-badge">Current Role</span>
+            <h3>Deputy Director of Discipline, Legal Affairs &amp; Control</h3>
+          </div>
+          <p class="leadership-desc">
+            Alongside my studies, I take part in the International Student Community,
+            where I currently hold this role. It's given me a different kind of
+            responsibility than academics does — one centered on people, fairness, and
+            following through.
+          </p>
+          <div class="leadership-responsibilities">
+            <div class="resp-item">
+              <span class="resp-icon" aria-hidden="true">&#9878;</span>
+              <p>Handling student complaints</p>
+            </div>
+            <div class="resp-item">
+              <span class="resp-icon" aria-hidden="true">&#128220;</span>
+              <p>Helping enforce community rules</p>
+            </div>
+            <div class="resp-item">
+              <span class="resp-icon" aria-hidden="true">&#129309;</span>
+              <p>Participating in decision-making</p>
+            </div>
+            <div class="resp-item">
+              <span class="resp-icon" aria-hidden="true">&#9878;</span>
+              <p>Managing disciplinary matters</p>
+            </div>
+            <div class="resp-item">
+              <span class="resp-icon" aria-hidden="true">&#127881;</span>
+              <p>Helping organize community events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERESTS / BEYOND CODE ============ -->
+    <section class="section section-alt" id="interests">
+      <div class="container">
+        <p class="section-eyebrow">07 — Beyond Code</p>
+        <h2 class="section-title">What else I spend my time on</h2>
+
+        <div class="interests-grid reveal">
+          <div class="interest-card">
+            <div class="interest-icon" aria-hidden="true">&#9917;</div>
+            <h3>Football</h3>
+            <p>I play whenever I get the chance, and I watch just as much. It's my
+              main way of switching off from coursework.</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon" aria-hidden="true">&#128274;</div>
+            <h3>Cybersecurity</h3>
+            <p>Still early days here — I'm reading, exploring, and figuring out where
+              in the field I want to specialize. Expect this section to grow.</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon" aria-hidden="true">&#9889;</div>
+            <h3>Learning &amp; Challenges</h3>
+            <p>I like trying things I haven't done before and taking on academic
+              challenges that push me — it's usually how I learn fastest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-eyebrow">08 — Contact</p>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-lead reveal">
+          Feel free to reach out about coursework, collaboration, or just to say hi.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <a class="contact-link" href="mailto:ezyibrahima@iut-dhaka.edu">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6l-10 7L2 6"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ezyibrahima@iut-dhaka.edu</span>
+              </span>
+            </a>
+
+            <a class="contact-link" href="https://github.com/Ezy200546" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.83-.02 3.22 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/Ezy200546</span>
+              </span>
+            </a>
+
+            <a class="contact-link" href="https://www.linkedin.com/in/ezy-ibrahima-ch%C3%A9rif-398330264/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              </span>
+              <span class="contact-text">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Ezy Ibrahima Chérif</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <p class="form-note">
+              This form doesn't send anything on its own — there's no backend behind
+              it. Submitting it will just open your email app with the message
+              pre-filled, addressed to me directly.
+            </p>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email" />
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send via Email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Ezy Ibrahima Cherif</span>
+        <span class="footer-role">BSc Computer Science &amp; Engineering Student — Islamic University of Technology</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:ezyibrahima@iut-dhaka.edu">Email</a>
+        <a href="https://github.com/Ezy200546" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ezy-ibrahima-ch%C3%A9rif-398330264/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; <span id="year"></span> Ezy Ibrahima Cherif. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
